@@ -1,0 +1,177 @@
+body {
+  background-color: #e0f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background: linear-gradient(to right, #4a4f4e, #1813ad);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(to right, #0066ff, #66ccff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+}
+
+#btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#btn:hover {
+  background-color: #e91e63;
+}
+
+.gradient-box {
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+  border: 4px solid transparent;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-caption {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Newsletter and Contact Forms */
+.newsletter,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.newsletter input,
+.contact-form input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button,
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover,
+.contact-form button:hover {
+  background-color: #e91e63;
+}
+
+/* FAQ and Details */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+details p {
+  margin: 5px 0 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
