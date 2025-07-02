@@ -1,100 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learning Website</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #17212c;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .hero-section {
+      background-color: #1364c1;
+      color: white;
+      height: 300px;
+    }
+    .hero-section h1, .hero-section p {
+      margin: 0;
+    }
+    .section-yellow {
+      background-color: #ffcc00;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <div class="title">Let's Learn Together</div>
-        <div class="nav-links">
-          <a href="#">Courses</a>
-          <a href="#">Instructors</a>
-          <a href="#">Testimonials</a>
-          <a href="#">FAQ</a>
-          <a href="#">Signup</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">TechTomorrow</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon bg-light rounded"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Speaker</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="container-fluid hero-section d-flex flex-column justify-content-center align-items-start p-5">
+  <button class="btn btn-light mb-3">Register Now</button>
+  <h1 class="mb-2">FutureTech Summit: Innovating Beyond Tomorrow</h1>
+  <p>tep into the frontier of innovation at FutureTech Summit, where visionary minds converge to explore the technologies shaping our world—and worlds yet to come.</p>
+</div>
+
+<!-- About Section -->
+<div class="container-fluid section-yellow text-dark py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2>About the Event</h2>
+        <p>
+          From the mind-bending potential of quantum computing to the transformative power of artificial intelligence, blockchain, Web3, and neurotechnology, this event brings together pioneers, creators, and thinkers redefining what's possible.
+        </p>
+      </div>
+      <div class="col-md-5 text-end">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.0gZ9qIEMceG_t7qcZ3YJmwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded shadow" alt="Event image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Highlights Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Highlights</h2>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.519zO_4JKaSz0PS9UisPUwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">Quantum technologies</h5>
+          <p class="card-text">Unlocking unparalleled computational power through quantum mechanics.</p>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Don't Miss the Opportunity!</h2>
-      <p>Boost your skills with our expert-led online courses.</p>
-      <a href="#" id="btn">Enroll Now</a>
-    </div>
-  </section>
-
-  <!-- Courses Section -->
-
-  <merquee>
-  <section class="scrolling-courses">
-    <div class="card-container">
-      <div class="card">
-        <img src="https://i.ytimg.com/vi/6GyV6KNYr0w/maxresdefault.jpg" alt="DSA Course"/>
-        <div class="card-caption">DSA - Full Course: Only $20</div>
-      </div>
-      <div class="card">
-        <img src="https://th.bing.com/th/id/OIP.6m4EX5c0AGgQ3FRM2JarBAHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Full Stack"/>
-        <div class="card-caption">Full Stack Development: $30</div>
-      </div>
-      <div class="card">
-        <img src="https://i.ytimg.com/vi/NA4HAdBmfjE/maxresdefault.jpg" alt="Git Advanced"/>
-        <div class="card-caption">Git Advanced: Only $5</div>
       </div>
     </div>
-  </section>
-</merquee>
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://ignasisayol.com/wp-content/uploads/2019/12/Edge-Computing.jpg" class="card-img-top" alt="Image 2">
+        <div class="card-body">
+          <h5 class="card-title">Edge Computing </h5>
+          <p class="card-text">Processing data closer to the source for faster, real-time insights.
 
-
-
-  <!-- Testimonials -->
-  <div class="gradient-box">
-    <h2>What Our Students Say</h2>
-    <blockquote>
-      "Education transformed my career in just 6 months. The instructors are incredibly helpful!"
-    </blockquote>
-    <cite>- Rahul Verma, Web Developer</cite>
+</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="https://www.interestingfacts.org/wp-content/uploads/2019/12/3dprintingfacts.jpg" class="card-img-top" alt="Image 3">
+        <div class="card-body">
+          <h5 class="card-title">3D Printing</h5>
+          <p class="card-text">Revolutionizing manufacturing with on-demand, customized production</p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <!-- FAQ Section -->
-  <div class="gradient-box">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-      <summary>How long are the courses?</summary>
-      <p>Most courses are 6–8 weeks long, with 2–3 hours of study per week.</p>
-    </details>
-    <details>
-      <summary>Do I get a certificate?</summary>
-      <p>Yes, a verified certificate is awarded upon successful completion.</p>
-    </details>
-  </div>
+<!-- Contact Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Register Now</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 
-  <!-- Newsletter -->
-  <div class="gradient-box">
-    <form class="newsletter">
-      <label for="subscribe">Subscribe for updates:</label>
-      <input type="email" id="subscribe" placeholder="Your Email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-
-  <!-- Contact Form -->
-  <div class="gradient-box">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone" required />
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Rohit All rights reserved.</p>
+  </div>
+</footer>
+
 </html>
